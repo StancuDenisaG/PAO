@@ -8,11 +8,8 @@ public interface SuplimentDB {static final String url = "jdbc:mysql://localhost:
     static final String user = "root";
     static final String password = "";
 
-    /**
-     * Connect to the PostgreSQL database
-     *
-     * @return a Connection object
-     */
+
+
     public static Connection connect() throws SQLException {
         return DriverManager.getConnection(url, user, password);
     }
