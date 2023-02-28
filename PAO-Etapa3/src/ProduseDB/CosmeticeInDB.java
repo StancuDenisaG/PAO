@@ -1,12 +1,8 @@
 package ProduseDB;
-
 import Produse.Cosmetice;
-
 import java.sql.*;
 
-//import static jdk.internal.org.jline.keymap.KeyMap.display;
 
-//import static jdk.internal.org.jline.keymap.KeyMap.display;
 
 public interface CosmeticeInDB {
 
@@ -14,11 +10,7 @@ public interface CosmeticeInDB {
     static final String user = "root";
     static final String password = "";
 
-    /**
-     * Connect to the PostgreSQL database
-     *
-     * @return a Connection object
-     */
+
     public static Connection connect() throws SQLException {
         return DriverManager.getConnection(url, user, password);
     }
